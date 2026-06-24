@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yessine Fakhfakh — Computer Engineering Portfolio</title>
-  <meta name="description" content="Portfolio of Yessine Fakhfakh — Computer Engineering Student passionate about AI/ML, automation, and full-stack development.">
+  <meta name="description" content="Portfolio of Yessine Fakhfakh — Computer Engineering Graduate passionate about AI/ML, automation, and full-stack development.">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/my-avatar.png" type="image/png">
@@ -14,52 +14,88 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- RemixIcons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=2026.06.15">
+  <link rel="stylesheet" href="./assets/css/style.css?v=2026.06.24">
 </head>
 
 <body>
 
-  <!--==================== SLEEK FADING MESH BACKDROP ====================-->
-  <div class="mesh-backdrop"></div>
-  <div class="backdrop-glow">
-    <div class="glow-blob blob-1"></div>
-    <div class="glow-blob blob-2"></div>
+  <!--==================== BACKDROP ====================-->
+  <div class="grid-backdrop"></div>
+  <div class="glow-orbs">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <!--==================== 3D FLOATING ELEMENTS ====================-->
+  <div class="floating-3d">
+    <!-- Wireframe Cube 1 -->
+    <div class="wire-cube el-1">
+      <div class="wire-cube__face wire-cube__face--front"></div>
+      <div class="wire-cube__face wire-cube__face--back"></div>
+      <div class="wire-cube__face wire-cube__face--left"></div>
+      <div class="wire-cube__face wire-cube__face--right"></div>
+      <div class="wire-cube__face wire-cube__face--top"></div>
+      <div class="wire-cube__face wire-cube__face--bottom"></div>
+    </div>
+    <!-- Spinning Ring 1 -->
+    <div class="wire-ring el-2"></div>
+    <!-- Diamond 1 -->
+    <div class="wire-diamond el-3"></div>
+    <!-- Ring 2 -->
+    <div class="wire-ring el-4"></div>
+    <!-- Wireframe Cube 2 -->
+    <div class="wire-cube el-5">
+      <div class="wire-cube__face wire-cube__face--front"></div>
+      <div class="wire-cube__face wire-cube__face--back"></div>
+      <div class="wire-cube__face wire-cube__face--left"></div>
+      <div class="wire-cube__face wire-cube__face--right"></div>
+      <div class="wire-cube__face wire-cube__face--top"></div>
+      <div class="wire-cube__face wire-cube__face--bottom"></div>
+    </div>
+    <!-- Glowing Dots -->
+    <div class="wire-dot el-6"></div>
+    <div class="wire-dot el-7"></div>
+    <div class="wire-dot el-8"></div>
+    <!-- Ring 3 -->
+    <div class="wire-ring el-9"></div>
+    <!-- Diamond 2 -->
+    <div class="wire-diamond el-10"></div>
   </div>
 
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav__logo">
-        <span class="nav__logo-mono">[yessine]</span>
+        yessine<span class="nav__logo-accent">.dev</span>
       </a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link active-link"><span class="nav__link-num">// 00</span> Home</a></li>
-          <li><a href="#about" class="nav__link"><span class="nav__link-num">// 01</span> About</a></li>
-          <li><a href="#resume" class="nav__link"><span class="nav__link-num">// 02</span> Resume</a></li>
-          <li><a href="#projects" class="nav__link"><span class="nav__link-num">// 03</span> Projects</a></li>
-          <li><a href="#social" class="nav__link"><span class="nav__link-num">// 04</span> Social</a></li>
-          <li><a href="#contact" class="nav__link"><span class="nav__link-num">// 05</span> Contact</a></li>
+          <li><a href="#home" class="nav__link active-link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#resume" class="nav__link">Resume</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#social" class="nav__link">Social</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
 
-        <button class="nav__close" id="nav-close" aria-label="Close menu">
+        <button class="nav-icon-btn nav__close" id="nav-close" aria-label="Close menu">
           <i class="ri-close-line"></i>
         </button>
       </div>
 
       <div class="nav__actions">
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+        <button class="nav-icon-btn" id="theme-toggle" aria-label="Toggle theme">
           <i class="ri-moon-line"></i>
         </button>
 
-        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+        <button class="nav-icon-btn nav__toggle" id="nav-toggle" aria-label="Open menu">
           <i class="ri-menu-3-line"></i>
         </button>
       </div>
@@ -69,50 +105,50 @@
   <!--==================== MAIN CONTENT ====================-->
   <main class="main container">
 
-    <!--==================== HOME / HERO ====================-->
-    <section class="home section" id="home">
-      <div class="home__container">
-        <div class="home__data">
-          <div class="blueprint-label">// 00 // INTRODUCTION</div>
-          <div class="blueprint-status">[STATUS: OPEN_TO_WORK]</div>
-          
-          <h1 class="home__name">Yessine<br>Fakhfakh</h1>
-          <p class="home__profession">
-            <span>Computer Engineering</span> Student
+    <!--==================== HERO ====================-->
+    <section class="hero section" id="home">
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__badge reveal">
+            <span class="hero__badge-dot"></span> Open to Work
+          </div>
+
+          <h1 class="hero__name reveal reveal-delay-1">Yessine<br>Fakhfakh</h1>
+
+          <p class="hero__role reveal reveal-delay-2">
+            <strong>Computer Engineering</strong> Graduate
           </p>
-          <p class="home__description">
+
+          <p class="hero__desc reveal reveal-delay-3">
             Passionate about building intelligent solutions for real-world applications — AI/ML, automation, and full-stack development.
           </p>
 
-          <div class="home__buttons">
-            <a href="https://drive.google.com/file/d/1IEKssOaD9KEmpqqlFDUrMwYfVrMVXCGJ/view?usp=sharing" target="_blank" rel="noreferrer" class="button">
+          <div class="hero__actions reveal reveal-delay-4">
+            <a href="https://drive.google.com/file/d/11EutiX8mgEKckIdB5CrgaMvLrehPvx5E/view?usp=sharing" target="_blank" rel="noreferrer" class="btn btn-primary">
               <i class="ri-file-text-line"></i> View Resume
             </a>
-            <a href="#contact" class="button button--outline">
+            <a href="#contact" class="btn btn-outline">
               <i class="ri-mail-send-line"></i> Contact Me
             </a>
           </div>
 
-          <div class="home__social">
-            <a href="https://www.linkedin.com/in/yessine-fakhfakh-470145298/" target="_blank" rel="noreferrer" class="home__social-link" aria-label="LinkedIn">
+          <div class="hero__socials reveal reveal-delay-5">
+            <a href="https://www.linkedin.com/in/yessine-fakhfakh-470145298/" target="_blank" rel="noreferrer" class="social-icon" aria-label="LinkedIn">
               <i class="ri-linkedin-box-line"></i>
             </a>
-            <a href="https://github.com/yessine18" target="_blank" rel="noreferrer" class="home__social-link" aria-label="GitHub">
+            <a href="https://github.com/yessine18" target="_blank" rel="noreferrer" class="social-icon" aria-label="GitHub">
               <i class="ri-github-line"></i>
             </a>
-            <a href="mailto:yessine.fakhfakh@enis.tn" class="home__social-link" aria-label="Email">
+            <a href="mailto:yessine.fakhfakh@enis.tn" class="social-icon" aria-label="Email">
               <i class="ri-mail-line"></i>
             </a>
           </div>
         </div>
 
-        <div class="home__img-wrapper">
-          <div class="home__img-container">
-            <img src="./assets/images/yessine_fakhfakh.png" alt="Yessine Fakhfakh" class="home__img">
-            <div class="blueprint-corner-labels">
-              <span class="lbl-top-left">SYS_REF: 2002.11.18</span>
-              <span class="lbl-bottom-right">LOC: 34.74° N, 10.76° E</span>
-            </div>
+        <div class="hero__visual reveal-scale reveal-delay-2">
+          <div class="hero__img-frame">
+            <img src="./assets/images/imagenoBG.png" alt="Yessine Fakhfakh" class="hero__img">
+            <div class="hero__img-glow"></div>
           </div>
         </div>
       </div>
@@ -120,73 +156,67 @@
 
     <!--==================== ABOUT & SPECIALTIES ====================-->
     <section class="about section" id="about">
-      <div class="section__header">
-        <span class="section__blueprint-num">// 01 // OVERVIEW</span>
-        <h2 class="section__title">About <span>Me</span></h2>
+      <div class="section-header reveal">
+        <span class="section-label">About</span>
+        <h2 class="section-title">About <span>Me</span></h2>
       </div>
 
       <div class="about__container">
-        
-        <div class="about__data card-blueprint">
-          <h3 class="blueprint-header">[THE JOURNEY]</h3>
-          <p class="about__description">
-            I'm a <b>Computer Engineering Student</b> passionate about building intelligent solutions for real-world applications.
-            Currently studying at the <b>National Engineering School of Sfax (ENIS)</b>, with core academic and personal focus in
-            <b>AI/ML, automation, and full-stack development</b>. I love exploring new technologies and creating
-            systems that make an impact.
+
+        <div class="card about__card reveal-left">
+          <span class="about__card-label">The Journey</span>
+          <p class="about__text">
+            I'm a fresh <b>Computer Engineering Graduate</b> holding a <b>National Engineering Diploma</b> from the <b>National Engineering School of Sfax (ENIS)</b>. My core academic and personal focus lies in
+            <b>AI/ML, automation, and full-stack development</b>. I love exploring new technologies and building intelligent systems that make a lasting impact.
           </p>
 
-          <div class="cv__actions">
-            <span class="blueprint-tag">[FILE_REF: CURRICULUM_VITAE]</span>
-            <div class="cv__buttons">
-              <a href="https://drive.google.com/file/d/1IEKssOaD9KEmpqqlFDUrMwYfVrMVXCGJ/view?usp=sharing" target="_blank" rel="noreferrer" class="button button--small">
-                <i class="ri-eye-line"></i> View PDF
-              </a>
-              <a href="https://drive.google.com/uc?export=download&id=1IEKssOaD9KEmpqqlFDUrMwYfVrMVXCGJ" class="button button--small button--outline">
-                <i class="ri-download-line"></i> Download
-              </a>
-            </div>
+          <div class="cv-actions">
+            <a href="https://drive.google.com/file/d/11EutiX8mgEKckIdB5CrgaMvLrehPvx5E/view?usp=sharing" target="_blank" rel="noreferrer" class="btn btn-sm btn-primary">
+              <i class="ri-eye-line"></i> View PDF
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=11EutiX8mgEKckIdB5CrgaMvLrehPvx5E" class="btn btn-sm btn-outline">
+              <i class="ri-download-line"></i> Download
+            </a>
           </div>
         </div>
 
-        <div class="specialties__container">
-          <h3 class="blueprint-header">[CORE SPECIALTIES]</h3>
-          <div class="specialties__grid">
-            
-            <div class="specialty__card card-blueprint">
-              <div class="specialty__card-header">
-                <span class="specialty__card-mono">SPEC_01</span>
-                <i class="ri-brain-line specialty__icon"></i>
+        <div class="reveal">
+          <div class="specs__grid">
+
+            <div class="card spec-card reveal reveal-delay-1">
+              <div class="spec-card__header">
+                <span class="spec-card__num">01</span>
+                <i class="ri-brain-line spec-card__icon"></i>
               </div>
-              <h4 class="specialty__title">AI & Machine Learning</h4>
-              <p class="specialty__description">Building intelligent systems for prediction, computer vision, and NLP.</p>
+              <h4 class="spec-card__title">AI & Machine Learning</h4>
+              <p class="spec-card__desc">Building intelligent systems for prediction, computer vision, and NLP.</p>
             </div>
 
-            <div class="specialty__card card-blueprint">
-              <div class="specialty__card-header">
-                <span class="specialty__card-mono">SPEC_02</span>
-                <i class="ri-code-s-slash-line specialty__icon"></i>
+            <div class="card spec-card reveal reveal-delay-2">
+              <div class="spec-card__header">
+                <span class="spec-card__num">02</span>
+                <i class="ri-code-s-slash-line spec-card__icon"></i>
               </div>
-              <h4 class="specialty__title">Web Dev (MEAN)</h4>
-              <p class="specialty__description">Developing scalable web apps and RESTful APIs.</p>
+              <h4 class="spec-card__title">Web Dev (MEAN)</h4>
+              <p class="spec-card__desc">Developing scalable web apps and RESTful APIs.</p>
             </div>
 
-            <div class="specialty__card card-blueprint">
-              <div class="specialty__card-header">
-                <span class="specialty__card-mono">SPEC_03</span>
-                <i class="ri-flow-chart specialty__icon"></i>
+            <div class="card spec-card reveal reveal-delay-3">
+              <div class="spec-card__header">
+                <span class="spec-card__num">03</span>
+                <i class="ri-flow-chart spec-card__icon"></i>
               </div>
-              <h4 class="specialty__title">Automation</h4>
-              <p class="specialty__description">Designing n8n workflows and AI agent pipelines for automation.</p>
+              <h4 class="spec-card__title">Automation</h4>
+              <p class="spec-card__desc">Designing n8n workflows and AI agent pipelines for automation.</p>
             </div>
 
-            <div class="specialty__card card-blueprint">
-              <div class="specialty__card-header">
-                <span class="specialty__card-mono">SPEC_04</span>
-                <i class="ri-eye-line specialty__icon"></i>
+            <div class="card spec-card reveal reveal-delay-4">
+              <div class="spec-card__header">
+                <span class="spec-card__num">04</span>
+                <i class="ri-eye-line spec-card__icon"></i>
               </div>
-              <h4 class="specialty__title">CV & OCR</h4>
-              <p class="specialty__description">Extracting insights from images and documents using CV/OCR.</p>
+              <h4 class="spec-card__title">CV & OCR</h4>
+              <p class="spec-card__desc">Extracting insights from images and documents using CV/OCR.</p>
             </div>
 
           </div>
@@ -197,79 +227,71 @@
 
     <!--==================== RESUME & SKILLS ====================-->
     <section class="resume section" id="resume">
-      <div class="section__header">
-        <span class="section__blueprint-num">// 02 // CHRONOLOGY</span>
-        <h2 class="section__title">My <span>Resume</span></h2>
+      <div class="section-header reveal">
+        <span class="section-label">Resume</span>
+        <h2 class="section-title">My <span>Resume</span></h2>
       </div>
 
       <div class="resume__container">
-        
-        <div class="timeline__grid">
-          
+
+        <div class="timeline-grid">
+
           <!-- Education Column -->
-          <div class="timeline__col">
-            <h3 class="timeline__col-title"><span class="mono-prefix">[EDU]</span> Education</h3>
-            
+          <div class="reveal-left">
+            <h3 class="timeline-col__title">
+              <span class="timeline-col__tag">EDU</span> Education
+            </h3>
+
             <div class="timeline">
               <div class="timeline__item">
-                <span class="timeline__date">[2023 — PRES]</span>
-                <div class="timeline__data">
-                  <h4 class="timeline__title">Computer Science Engineering</h4>
-                  <span class="timeline__institution">ENIS</span>
-                  <p class="timeline__text">National Engineering School of Sfax (ENIS).</p>
-                </div>
+                <span class="timeline__date">2023 — 2026</span>
+                <h4 class="timeline__title">National Engineering Diploma in Computer Engineering</h4>
+                <span class="timeline__org">ENIS</span>
+                <p class="timeline__desc">National Engineering School of Sfax (ENIS).</p>
               </div>
 
               <div class="timeline__item">
-                <span class="timeline__date">[2021 — 2023]</span>
-                <div class="timeline__data">
-                  <h4 class="timeline__title">Pre‑Engineering (Physics & Mathematics)</h4>
-                  <span class="timeline__institution">FSS</span>
-                  <p class="timeline__text">Faculty of Sciences of Sfax (FSS). Ranked in the top 40% in the National Exam for Entrance to Engineering Schools.</p>
-                </div>
+                <span class="timeline__date">2021 — 2023</span>
+                <h4 class="timeline__title">Pre‑Engineering (Physics & Mathematics)</h4>
+                <span class="timeline__org">FSS</span>
+                <p class="timeline__desc">Faculty of Sciences of Sfax (FSS). Ranked in the top 40% in the National Exam for Entrance to Engineering Schools.</p>
               </div>
             </div>
           </div>
 
           <!-- Experience Column -->
-          <div class="timeline__col">
-            <h3 class="timeline__col-title"><span class="mono-prefix">[EXP]</span> Experience</h3>
+          <div class="reveal-right">
+            <h3 class="timeline-col__title">
+              <span class="timeline-col__tag">EXP</span> Experience
+            </h3>
 
             <div class="timeline">
               <div class="timeline__item">
-                <span class="timeline__date">[2025 // JUN]</span>
-                <div class="timeline__data">
-                  <h4 class="timeline__title">Software Engineer Intern</h4>
-                  <span class="timeline__institution">Assistance Plus Sfax</span>
-                  <p class="timeline__text">Built a hybrid AI agent orchestration platform using n8n with advanced data pipelines, enabling real‑time monitoring and dynamic workflow adaptation.</p>
-                </div>
+                <span class="timeline__date">May — Jun 2026</span>
+                <h4 class="timeline__title">Intelligent Charity Actions Platform</h4>
+                <span class="timeline__org">Inetum Tunisie Hackathon</span>
+                <p class="timeline__desc">Built an Agentic AI chatbot using FastAPI and Angular to automate registrations and semantic search. Leveraged Neo4j AuraDB for vector knowledge graphs and Supabase for transactional data storage.</p>
               </div>
 
               <div class="timeline__item">
-                <span class="timeline__date">[2024 // DEC]</span>
-                <div class="timeline__data">
-                  <h4 class="timeline__title">End‑of‑Year Project</h4>
-                  <span class="timeline__institution">ENIS</span>
-                  <p class="timeline__text">AI‑powered energy prediction platform with automated MLOps (KubeFlow/MLFlow) and anomaly detection for resource optimization.</p>
-                </div>
+                <span class="timeline__date">May — Jun 2026</span>
+                <h4 class="timeline__title">Graduation Project: Autonomous Helpdesk Engine</h4>
+                <span class="timeline__org">Inetum Tunisie</span>
+                <p class="timeline__desc">Developed an autonomous helpdesk engine using agentic AI and graph architectures to automate IT ticket resolution from Outlook emails. Implemented stateful LangGraph workflows with Graph RAG, Entra ID OAuth 2.0, and Azure DevOps integration.</p>
               </div>
 
               <div class="timeline__item">
-                <span class="timeline__date">[2024 // SEP]</span>
-                <div class="timeline__data">
-                  <h4 class="timeline__title">TerraNova 2056</h4>
-                  <span class="timeline__institution">Smart City Platform</span>
-                  <p class="timeline__text">Scalable system combining satellite tech with CanSat devices for real‑time data collection; applied ML for vegetation health prediction.</p>
-                </div>
+                <span class="timeline__date">Jun — Aug 2025</span>
+                <h4 class="timeline__title">Software Engineer Intern</h4>
+                <span class="timeline__org">Assistance Plus Sfax</span>
+                <p class="timeline__desc">Developed a hybrid AI agent orchestration platform using n8n with advanced data pipelines, enabling real-time monitoring and dynamic workflow adaptation to enhance efficiency.</p>
               </div>
 
               <div class="timeline__item">
-                <span class="timeline__date">[2025 // OCT]</span>
-                <div class="timeline__data">
-                  <h4 class="timeline__title">AI Receipt Processing Automation</h4>
-                  <span class="timeline__institution">Freelance Project</span>
-                  <p class="timeline__text">Built full-stack receipt automation platform with React frontend, FastAPI backend, and Discord bot integration.</p>
-                </div>
+                <span class="timeline__date">Dec 2024 — May 2025</span>
+                <h4 class="timeline__title">End of a Year Project</h4>
+                <span class="timeline__org">ENIS</span>
+                <p class="timeline__desc">Developed an AI-powered energy consumption prediction platform with MLOps pipelines (KubeFlow/MLFlow) and anomaly detection for resource optimization.</p>
               </div>
             </div>
           </div>
@@ -277,67 +299,67 @@
         </div>
 
         <!-- Skills Matrix -->
-        <div class="skills__sub">
-          <h3 class="blueprint-header">[TECH_STACK]</h3>
-          <div class="skills__list">
-            
-            <div class="skills__item">
-              <div class="skills__header-info">
-                <span class="skills__name">Python</span>
-                <span class="skills__percentage">90%</span>
+        <div class="skills-section reveal">
+          <h3 class="skills-section__title">Tech Stack</h3>
+          <div class="skills__grid">
+
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Python & C++</span>
+                <span class="skill__pct">90%</span>
               </div>
-              <div class="skills__bar">
-                <div class="skills__fill" data-width="90%"></div>
+              <div class="skill__track">
+                <div class="skill__fill" data-width="90%"></div>
               </div>
             </div>
 
-            <div class="skills__item">
-              <div class="skills__header-info">
-                <span class="skills__name">Machine Learning</span>
-                <span class="skills__percentage">85%</span>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">AI Agent Orchestration (LangGraph / n8n)</span>
+                <span class="skill__pct">88%</span>
               </div>
-              <div class="skills__bar">
-                <div class="skills__fill" data-width="85%"></div>
-              </div>
-            </div>
-
-            <div class="skills__item">
-              <div class="skills__header-info">
-                <span class="skills__name">Deep Learning</span>
-                <span class="skills__percentage">80%</span>
-              </div>
-              <div class="skills__bar">
-                <div class="skills__fill" data-width="80%"></div>
+              <div class="skill__track">
+                <div class="skill__fill" data-width="88%"></div>
               </div>
             </div>
 
-            <div class="skills__item">
-              <div class="skills__header-info">
-                <span class="skills__name">NLP</span>
-                <span class="skills__percentage">80%</span>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Machine Learning & Deep Learning</span>
+                <span class="skill__pct">85%</span>
               </div>
-              <div class="skills__bar">
-                <div class="skills__fill" data-width="80%"></div>
-              </div>
-            </div>
-
-            <div class="skills__item">
-              <div class="skills__header-info">
-                <span class="skills__name">MEAN Stack</span>
-                <span class="skills__percentage">75%</span>
-              </div>
-              <div class="skills__bar">
-                <div class="skills__fill" data-width="75%"></div>
+              <div class="skill__track">
+                <div class="skill__fill" data-width="85%"></div>
               </div>
             </div>
 
-            <div class="skills__item">
-              <div class="skills__header-info">
-                <span class="skills__name">SQL</span>
-                <span class="skills__percentage">75%</span>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Graph RAG & Knowledge Graphs (Neo4j)</span>
+                <span class="skill__pct">80%</span>
               </div>
-              <div class="skills__bar">
-                <div class="skills__fill" data-width="75%"></div>
+              <div class="skill__track">
+                <div class="skill__fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Full-Stack Dev (FastAPI / MEAN / Supabase)</span>
+                <span class="skill__pct">80%</span>
+              </div>
+              <div class="skill__track">
+                <div class="skill__fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">SQL & Vector Databases (ChromaDB)</span>
+                <span class="skill__pct">75%</span>
+              </div>
+              <div class="skill__track">
+                <div class="skill__fill" data-width="75%"></div>
               </div>
             </div>
 
@@ -349,295 +371,319 @@
 
     <!--==================== PROJECTS ====================-->
     <section class="projects section" id="projects">
-      <div class="section__header">
-        <span class="section__blueprint-num">// 03 // DEPLOYMENTS</span>
-        <h2 class="section__title">My <span>Projects</span></h2>
+      <div class="section-header reveal">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">My <span>Projects</span></h2>
       </div>
 
-      <div class="projects__container">
-        <div class="projects__grid">
+      <div class="projects__grid">
 
-          <!-- Project 1 -->
-          <article class="project__card card-blueprint" data-url="https://github.com/yessine18/AI-Receipt-Processing-Automation">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-1.png" alt="AI Receipt Processing Automation" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: AI_RECEIPT_AUTO]</span>
-              <h3 class="project__title">AI Receipt Automation</h3>
-              <p class="project__category">Applications</p>
-              <a href="https://github.com/yessine18/AI-Receipt-Processing-Automation" target="_blank" rel="noreferrer" class="project__link">
-                Open Repository <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-          </article>
+        <!-- Project 1: Graduation Project -->
+        <article class="project-card reveal reveal-delay-1" data-url="https://drive.google.com/file/d/1b3L2UYXAQa9FV9o9zwM0ytMx_yhK60hS/view?pli=1">
+          <div class="project-card__visual">
+            <img src="./assets/images/graduation.png" alt="Autonomous Helpdesk Engine" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Graduation Project</span>
+            <h3 class="project-card__title">Autonomous Helpdesk Engine</h3>
+            <p class="project-card__cat">AI Agents / LangGraph</p>
+            <a href="https://drive.google.com/file/d/1b3L2UYXAQa9FV9o9zwM0ytMx_yhK60hS/view?pli=1" target="_blank" rel="noreferrer" class="project-card__link">
+              View Project Report <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 2 -->
-          <article class="project__card card-blueprint" data-url="https://github.com/yessine18/AESSENIS-terranova">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-2.png" alt="TerraNova 2056 — Smart City Platform" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: TERRANOVA_2056]</span>
-              <h3 class="project__title">TerraNova 2056 — Smart City</h3>
-              <p class="project__category">Applications</p>
-              <a href="https://github.com/yessine18/AESSENIS-terranova" target="_blank" rel="noreferrer" class="project__link">
-                Open Repository <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-          </article>
+        <!-- Project 2: Charity Actions Platform -->
+        <article class="project-card reveal reveal-delay-2" data-url="https://github.com/yessine18/Hackathon-Inetum">
+          <div class="project-card__visual">
+            <img src="./assets/images/charity-day.png" alt="Intelligent Charity Actions Platform" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Hackathon</span>
+            <h3 class="project-card__title">Intelligent Charity Platform</h3>
+            <p class="project-card__cat">Full-Stack / AI</p>
+            <a href="https://github.com/yessine18/Hackathon-Inetum" target="_blank" rel="noreferrer" class="project-card__link">
+              Open Repository <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 3 -->
-          <article class="project__card card-blueprint" data-url="https://drive.google.com/file/d/1H2OQNzqXLgf6qVELF5xoNgeflaAghcwY/view">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-3.png" alt="Energy Consumption Prediction Platform" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: ENERGY_PREDICT]</span>
-              <h3 class="project__title">Energy Prediction Platform</h3>
-              <p class="project__category">Applications</p>
-              <a href="https://drive.google.com/file/d/1H2OQNzqXLgf6qVELF5xoNgeflaAghcwY/view" target="_blank" rel="noreferrer" class="project__link">
-                View Document <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-          </article>
+        <!-- Project 3: AI Receipt Automation -->
+        <article class="project-card reveal reveal-delay-3" data-url="https://github.com/yessine18/AI-Receipt-Processing-Automation">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-1.png" alt="AI Receipt Processing Automation" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Freelance</span>
+            <h3 class="project-card__title">AI Receipt Automation</h3>
+            <p class="project-card__cat">AI Automation / OCR</p>
+            <a href="https://github.com/yessine18/AI-Receipt-Processing-Automation" target="_blank" rel="noreferrer" class="project-card__link">
+              Open Repository <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 4 -->
-          <article class="project__card card-blueprint" data-url="#">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-5.jpg" alt="Sign Language Recognition" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: SIGN_LANG_RECOG]</span>
-              <h3 class="project__title">Sign Language Recognition</h3>
-              <p class="project__category">Applications</p>
-              <span class="project__link-disabled">No Link Available</span>
-            </div>
-          </article>
+        <!-- Project 4: TerraNova 2056 -->
+        <article class="project-card reveal reveal-delay-1" data-url="https://github.com/yessine18/AESSENIS-terranova">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-2.png" alt="TerraNova 2056 — Smart City Platform" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">ML / IoT</span>
+            <h3 class="project-card__title">TerraNova 2056 — Smart City</h3>
+            <p class="project-card__cat">Machine Learning / IoT</p>
+            <a href="https://github.com/yessine18/AESSENIS-terranova" target="_blank" rel="noreferrer" class="project-card__link">
+              Open Repository <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 5 -->
-          <article class="project__card card-blueprint" data-url="https://drive.google.com/drive/folders/19DgKB7Xz_F1ezxPvQFdqWQ9O_UUNFQY4?usp=sharing">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-6.png" alt="Customer Churn Prediction" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: CHURN_PREDICT]</span>
-              <h3 class="project__title">Customer Churn Prediction</h3>
-              <p class="project__category">Web Development</p>
-              <a href="https://drive.google.com/drive/folders/19DgKB7Xz_F1ezxPvQFdqWQ9O_UUNFQY4?usp=sharing" target="_blank" rel="noreferrer" class="project__link">
-                Open Drive <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-          </article>
+        <!-- Project 5: Energy Prediction Platform -->
+        <article class="project-card reveal reveal-delay-2" data-url="https://drive.google.com/file/d/1H2OQNzqXLgf6qVELF5xoNgeflaAghcwY/view">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-3.png" alt="Energy Consumption Prediction Platform" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">MLOps</span>
+            <h3 class="project-card__title">Energy Prediction Platform</h3>
+            <p class="project-card__cat">Deep Learning / MLOps</p>
+            <a href="https://drive.google.com/file/d/1H2OQNzqXLgf6qVELF5xoNgeflaAghcwY/view" target="_blank" rel="noreferrer" class="project-card__link">
+              View Document <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
 
-          <!-- Project 6 -->
-          <article class="project__card card-blueprint" data-url="https://drive.google.com/file/d/1hUwhpPLJhUNY21usCySUzu00JDOKn_B3/view?usp=sharing">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-7.png" alt="Astronomy-Themed Website" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: ASTRONOMY_WEB]</span>
-              <h3 class="project__title">Astronomy‑Themed Website</h3>
-              <p class="project__category">Web Design</p>
-              <a href="https://drive.google.com/file/d/1hUwhpPLJhUNY21usCySUzu00JDOKn_B3/view?usp=sharing" target="_blank" rel="noreferrer" class="project__link">
-                Demo Video <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-          </article>
+        <!-- Project 6: Brain Tumor Analysis -->
+        <article class="project-card reveal reveal-delay-3" data-url="#">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-5.jpg" alt="Brain Tumor Analysis - Multi-Agent AI System" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Medicine / AI</span>
+            <h3 class="project-card__title">Brain Tumor Multi-Agent</h3>
+            <p class="project-card__cat">AI Agents / Medicine</p>
+            <span class="project-card__disabled">Personal Project</span>
+          </div>
+        </article>
 
-          <!-- Project 7 -->
-          <article class="project__card card-blueprint" data-url="#">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-8.jpg" alt="Line Following & Obstacle Detection Robot" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: LINE_FOLLOWER]</span>
-              <h3 class="project__title">Line Follower Robot</h3>
-              <p class="project__category">Applications</p>
-              <span class="project__link-disabled">Hardware System</span>
-            </div>
-          </article>
+        <!-- Project 7: RAG Chatbot -->
+        <article class="project-card reveal reveal-delay-1" data-url="#">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-9.png" alt="RAG Chatbot - Intelligent Q&A System" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">NLP / Graph RAG</span>
+            <h3 class="project-card__title">RAG Q&A Chatbot</h3>
+            <p class="project-card__cat">NLP / Knowledge Graphs</p>
+            <span class="project-card__disabled">Personal Project</span>
+          </div>
+        </article>
 
-          <!-- Project 8 -->
-          <article class="project__card card-blueprint" data-url="https://drive.google.com/file/d/1SLl74AzvdUYAPys8X6J3miLDGImCWR-v/view">
-            <div class="project__img-wrapper">
-              <img src="./assets/images/project-9.png" alt="Document Processing Automation" class="project__img" loading="lazy">
-            </div>
-            <div class="project__data">
-              <span class="project__mono">[FILE: DOC_PROCESS]</span>
-              <h3 class="project__title">Doc Processing Automation</h3>
-              <p class="project__category">Applications</p>
-              <a href="https://drive.google.com/file/d/1SLl74AzvdUYAPys8X6J3miLDGImCWR-v/view" target="_blank" rel="noreferrer" class="project__link">
-                Demo Video <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-          </article>
+        <!-- Project 8: Customer Churn Prediction -->
+        <article class="project-card reveal reveal-delay-2" data-url="https://drive.google.com/drive/folders/19DgKB7Xz_F1ezxPvQFdqWQ9O_UUNFQY4?usp=sharing">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-6.png" alt="Customer Churn Prediction" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Analytics</span>
+            <h3 class="project-card__title">Customer Churn Prediction</h3>
+            <p class="project-card__cat">Web Dev / Analytics</p>
+            <a href="https://drive.google.com/drive/folders/19DgKB7Xz_F1ezxPvQFdqWQ9O_UUNFQY4?usp=sharing" target="_blank" rel="noreferrer" class="project-card__link">
+              Open Drive <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
 
-        </div>
+        <!-- Project 9: Astronomy-Themed Website -->
+        <article class="project-card reveal reveal-delay-3" data-url="https://drive.google.com/file/d/1hUwhpPLJhUNY21usCySUzu00JDOKn_B3/view?usp=sharing">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-7.png" alt="Astronomy-Themed Website" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Web Design</span>
+            <h3 class="project-card__title">Astronomy‑Themed Website</h3>
+            <p class="project-card__cat">Frontend / Design</p>
+            <a href="https://drive.google.com/file/d/1hUwhpPLJhUNY21usCySUzu00JDOKn_B3/view?usp=sharing" target="_blank" rel="noreferrer" class="project-card__link">
+              Demo Video <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 10: Autonomous Line Follower -->
+        <article class="project-card reveal reveal-delay-1" data-url="#">
+          <div class="project-card__visual">
+            <img src="./assets/images/project-8.jpg" alt="Autonomous Line Follower Robot" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Robotics</span>
+            <h3 class="project-card__title">Line Follower Robot</h3>
+            <p class="project-card__cat">Hardware / Robotics</p>
+            <span class="project-card__disabled">Winner (Internal Competition)</span>
+          </div>
+        </article>
+
       </div>
     </section>
 
     <!--==================== SOCIAL & ACHIEVEMENTS ====================-->
     <section class="social section" id="social">
-      <div class="section__header">
-        <span class="section__blueprint-num">// 04 // ENGAGEMENTS</span>
-        <h2 class="section__title"><span>Social</span> & Achievements</h2>
+      <div class="section-header reveal">
+        <span class="section-label">Social</span>
+        <h2 class="section-title"><span>Social</span> & Achievements</h2>
       </div>
 
       <!-- Filters -->
-      <div class="social__filters">
-        <button class="social__filter-btn active" data-filter="all">[ALL]</button>
-        <button class="social__filter-btn" data-filter="leadership">[LEADERSHIP]</button>
-        <button class="social__filter-btn" data-filter="media">[MEDIA]</button>
-        <button class="social__filter-btn" data-filter="events">[EVENTS]</button>
-        <button class="social__filter-btn" data-filter="competitions">[COMPETITIONS]</button>
-        <button class="social__filter-btn" data-filter="awards">[AWARDS]</button>
+      <div class="social-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="leadership">Leadership</button>
+        <button class="filter-btn" data-filter="media">Media</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="competitions">Competitions</button>
+        <button class="filter-btn" data-filter="awards">Awards</button>
       </div>
 
       <!-- Grid -->
       <div class="social__grid">
 
-        <!-- Card 1 -->
-        <article class="social__card card-blueprint" data-category="leadership" data-url="https://www.facebook.com/profile.php?id=61561401374924">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/logo-1-color.jpg" alt="IEEE Week 1.0 — Technical Team Lead" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="leadership" data-url="https://www.facebook.com/profile.php?id=61561401374924">
+          <div class="social-card__visual">
+            <img src="./assets/images/logo-1-color.jpg" alt="IEEE Week 1.0 — Technical Team Lead" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">LEAD_01</span>
-            <h3 class="social__title">IEEE Week Lead</h3>
-            <p class="social__category">Leadership</p>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="social__card card-blueprint" data-category="media" data-url="https://www.youtube.com/@pyangogmbh">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/logo-2-color.jpg" alt="PYANGO — Video Editor" class="social__img" loading="lazy">
-          </div>
-          <div class="social__data">
-            <span class="social__mono">MEDIA_01</span>
-            <h3 class="social__title">PYANGO Editor</h3>
-            <p class="social__category">Media</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Leadership</span>
+            <h3 class="social-card__title">IEEE Week Lead</h3>
+            <p class="social-card__cat">Technical Team Lead</p>
           </div>
         </article>
 
-        <!-- Card 3 -->
-        <article class="social__card card-blueprint" data-category="media" data-url="https://www.facebook.com/IEEE.ENIS.SB">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/logo-3-color.png" alt="IEEE ENIS Student Branch — Media Manager" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="media" data-url="https://www.youtube.com/@pyangogmbh">
+          <div class="social-card__visual">
+            <img src="./assets/images/logo-2-color.jpg" alt="PYANGO — Video Editor" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">MEDIA_02</span>
-            <h3 class="social__title">IEEE ENIS SB Media</h3>
-            <p class="social__category">Media</p>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="social__card card-blueprint" data-category="events" data-url="https://www.facebook.com/reel/1312648297171069">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/logo-4-color.png" alt="TSYP 13 — Videos Manager" class="social__img" loading="lazy">
-          </div>
-          <div class="social__data">
-            <span class="social__mono">EVENT_01</span>
-            <h3 class="social__title">TSYP 13 Video Manager</h3>
-            <p class="social__category">Events</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Media</span>
+            <h3 class="social-card__title">PYANGO Editor</h3>
+            <p class="social-card__cat">Video Editor</p>
           </div>
         </article>
 
-        <!-- Card 5 -->
-        <article class="social__card card-blueprint" data-category="events" data-url="https://www.facebook.com/yessine.fakhfakh.9/videos/1229233734955003/">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/logo-5-color.jpg" alt="PYFAC 10 Forum — Design Manager" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="media" data-url="https://www.facebook.com/IEEE.ENIS.SB">
+          <div class="social-card__visual">
+            <img src="./assets/images/logo-3-color.png" alt="IEEE ENIS Student Branch — Media Manager" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">EVENT_02</span>
-            <h3 class="social__title">PYFAC 10 Design</h3>
-            <p class="social__category">Events</p>
-          </div>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="social__card card-blueprint" data-category="events" data-url="https://www.facebook.com/reel/1758834998103782">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/logo-6-color.png" alt="Tecweek 2.0 — Media Manager" class="social__img" loading="lazy">
-          </div>
-          <div class="social__data">
-            <span class="social__mono">EVENT_03</span>
-            <h3 class="social__title">Tecweek 2.0 Media</h3>
-            <p class="social__category">Events</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Media</span>
+            <h3 class="social-card__title">IEEE ENIS SB Media</h3>
+            <p class="social-card__cat">Media Manager</p>
           </div>
         </article>
 
-        <!-- Card 7 -->
-        <article class="social__card card-blueprint" data-category="competitions" data-url="https://www.facebook.com/profile.php?id=61552036079447">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/Screenshot 2025-10-12 223726.png" alt="3rd Place — AIDOLS AI Hackathon 2023" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="events" data-url="https://www.facebook.com/reel/1312648297171069">
+          <div class="social-card__visual">
+            <img src="./assets/images/logo-4-color.png" alt="TSYP 13 — Videos Manager" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">COMP_01</span>
-            <h3 class="social__title">3rd Place — AIDOLS AI Hackathon</h3>
-            <p class="social__category">Competitions</p>
-          </div>
-        </article>
-
-        <!-- Card 8 -->
-        <article class="social__card card-blueprint" data-category="competitions" data-url="https://www.facebook.com/IEECSEC">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/523758567_764592942766525_5953013517074242446_n.jpg" alt="Winner — ZeroTrace CTF Competition" class="social__img" loading="lazy">
-          </div>
-          <div class="social__data">
-            <span class="social__mono">COMP_02</span>
-            <h3 class="social__title">Winner — ZeroTrace CTF</h3>
-            <p class="social__category">Competitions</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Events</span>
+            <h3 class="social-card__title">TSYP 13 Video Manager</h3>
+            <p class="social-card__cat">Videos Manager</p>
           </div>
         </article>
 
-        <!-- Card 9 -->
-        <article class="social__card card-blueprint" data-category="competitions" data-url="https://www.facebook.com/IEEEDay">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/project-8.jpg" alt="Winner — Autonomous Line Follower Robot" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="events" data-url="https://www.facebook.com/yessine.fakhfakh.9/videos/1229233734955003/">
+          <div class="social-card__visual">
+            <img src="./assets/images/logo-5-color.jpg" alt="PYFAC 10 Forum — Design Manager" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">COMP_03</span>
-            <h3 class="social__title">Winner — Autonomous Line Follower</h3>
-            <p class="social__category">Competitions</p>
-          </div>
-        </article>
-
-        <!-- Card 10 -->
-        <article class="social__card card-blueprint" data-category="awards" data-url="https://www.facebook.com/reel/1124652449006705">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/Screenshot 2025-10-12 224139.png" alt="TSYP Best Video Award" class="social__img" loading="lazy">
-          </div>
-          <div class="social__data">
-            <span class="social__mono">AWARD_01</span>
-            <h3 class="social__title">TSYP Best Video Award</h3>
-            <p class="social__category">Awards</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Events</span>
+            <h3 class="social-card__title">PYFAC 10 Design</h3>
+            <p class="social-card__cat">Design Manager</p>
           </div>
         </article>
 
-        <!-- Card 11 -->
-        <article class="social__card card-blueprint" data-category="awards" data-url="https://www.facebook.com/CSENISsbc">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/484915059_973168871630697_9165944457973997389_n.jpg" alt="Best IEEE Technical Chapter — Tunisia Section" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="events" data-url="https://www.facebook.com/reel/1758834998103782">
+          <div class="social-card__visual">
+            <img src="./assets/images/logo-6-color.png" alt="Tecweek 2.0 — Media Manager" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">AWARD_02</span>
-            <h3 class="social__title">Best IEEE Chapter</h3>
-            <p class="social__category">Awards</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Events</span>
+            <h3 class="social-card__title">Tecweek 2.0 Media</h3>
+            <p class="social-card__cat">Media Manager</p>
           </div>
         </article>
 
-        <!-- Card 12 -->
-        <article class="social__card card-blueprint" data-category="awards" data-url="https://www.facebook.com/IEEEDay">
-          <div class="social__img-wrapper">
-            <img src="./assets/images/3f04056e-2354-5740-a0b3-33ed486f5bc3.jpg" alt="Winner — IEEE DAY 2023 Ideathon" class="social__img" loading="lazy">
+        <article class="social-card reveal" data-category="competitions" data-url="https://www.facebook.com/profile.php?id=61552036079447">
+          <div class="social-card__visual">
+            <img src="./assets/images/Screenshot 2025-10-12 223726.png" alt="3rd Place — AIDOLS AI Hackathon 2023" class="social-card__img" loading="lazy">
           </div>
-          <div class="social__data">
-            <span class="social__mono">AWARD_03</span>
-            <h3 class="social__title">Winner — IEEE Day Ideathon</h3>
-            <p class="social__category">Awards</p>
+          <div class="social-card__body">
+            <span class="social-card__tag">Competitions</span>
+            <h3 class="social-card__title">3rd Place — AIDOLS AI Hackathon</h3>
+            <p class="social-card__cat">AI Hackathon</p>
+          </div>
+        </article>
+
+        <article class="social-card reveal" data-category="competitions" data-url="https://www.facebook.com/IEECSEC">
+          <div class="social-card__visual">
+            <img src="./assets/images/523758567_764592942766525_5953013517074242446_n.jpg" alt="Winner — ZeroTrace CTF Competition" class="social-card__img" loading="lazy">
+          </div>
+          <div class="social-card__body">
+            <span class="social-card__tag">Competitions</span>
+            <h3 class="social-card__title">Winner — ZeroTrace CTF</h3>
+            <p class="social-card__cat">CTF Competition</p>
+          </div>
+        </article>
+
+        <article class="social-card reveal" data-category="competitions" data-url="https://www.facebook.com/IEEEDay">
+          <div class="social-card__visual">
+            <img src="./assets/images/project-8.jpg" alt="Winner — Autonomous Line Follower Robot" class="social-card__img" loading="lazy">
+          </div>
+          <div class="social-card__body">
+            <span class="social-card__tag">Competitions</span>
+            <h3 class="social-card__title">Winner — Autonomous Line Follower</h3>
+            <p class="social-card__cat">Robotics Competition</p>
+          </div>
+        </article>
+
+        <article class="social-card reveal" data-category="awards" data-url="https://www.facebook.com/reel/1124652449006705">
+          <div class="social-card__visual">
+            <img src="./assets/images/Screenshot 2025-10-12 224139.png" alt="TSYP Best Video Award" class="social-card__img" loading="lazy">
+          </div>
+          <div class="social-card__body">
+            <span class="social-card__tag">Awards</span>
+            <h3 class="social-card__title">TSYP Best Video Award</h3>
+            <p class="social-card__cat">Video Award</p>
+          </div>
+        </article>
+
+        <article class="social-card reveal" data-category="awards" data-url="https://www.facebook.com/CSENISsbc">
+          <div class="social-card__visual">
+            <img src="./assets/images/484915059_973168871630697_9165944457973997389_n.jpg" alt="Best IEEE Technical Chapter — Tunisia Section" class="social-card__img" loading="lazy">
+          </div>
+          <div class="social-card__body">
+            <span class="social-card__tag">Awards</span>
+            <h3 class="social-card__title">Best IEEE Chapter</h3>
+            <p class="social-card__cat">Tunisia Section</p>
+          </div>
+        </article>
+
+        <article class="social-card reveal" data-category="awards" data-url="https://www.facebook.com/IEEEDay">
+          <div class="social-card__visual">
+            <img src="./assets/images/3f04056e-2354-5740-a0b3-33ed486f5bc3.jpg" alt="Winner — IEEE DAY 2023 Ideathon" class="social-card__img" loading="lazy">
+          </div>
+          <div class="social-card__body">
+            <span class="social-card__tag">Awards</span>
+            <h3 class="social-card__title">Winner — IEEE Day Ideathon</h3>
+            <p class="social-card__cat">Ideathon</p>
           </div>
         </article>
 
@@ -646,73 +692,71 @@
 
     <!--==================== CONTACT ====================-->
     <section class="contact section" id="contact">
-      <div class="section__header">
-        <span class="section__blueprint-num">// 05 // CHANNELS</span>
-        <h2 class="section__title">Contact <span>Me</span></h2>
+      <div class="section-header reveal">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Contact <span>Me</span></h2>
       </div>
 
       <div class="contact__container">
-        
-        <div class="contact__info">
-          
-          <div class="contact__card card-blueprint">
-            <i class="ri-mail-line contact__card-icon"></i>
-            <div class="contact__card-details">
-              <span class="contact__mono">[EMAIL]</span>
-              <a href="mailto:yessine.fakhfakh@enis.tn" class="contact__data-link">yessine.fakhfakh@enis.tn</a>
+
+        <div class="contact-info reveal-left">
+          <div class="card contact-pill">
+            <div class="contact-pill__icon"><i class="ri-mail-line"></i></div>
+            <div class="contact-pill__meta">
+              <span class="contact-pill__label">Email</span>
+              <a href="mailto:yessine.fakhfakh@enis.tn" class="contact-pill__value">yessine.fakhfakh@enis.tn</a>
             </div>
           </div>
 
-          <div class="contact__card card-blueprint">
-            <i class="ri-phone-line contact__card-icon"></i>
-            <div class="contact__card-details">
-              <span class="contact__mono">[TEL]</span>
-              <a href="tel:+21656646677" class="contact__data-link">+216 56 646 677</a>
+          <div class="card contact-pill">
+            <div class="contact-pill__icon"><i class="ri-phone-line"></i></div>
+            <div class="contact-pill__meta">
+              <span class="contact-pill__label">Phone</span>
+              <a href="tel:+21656646677" class="contact-pill__value">+216 56 646 677</a>
             </div>
           </div>
 
-          <div class="contact__card card-blueprint">
-            <i class="ri-map-pin-line contact__card-icon"></i>
-            <div class="contact__card-details">
-              <span class="contact__mono">[LOC]</span>
-              <span class="contact__data-text">Sfax, Tunisia</span>
+          <div class="card contact-pill">
+            <div class="contact-pill__icon"><i class="ri-map-pin-line"></i></div>
+            <div class="contact-pill__meta">
+              <span class="contact-pill__label">Location</span>
+              <span class="contact-pill__value">Sfax, Tunisia</span>
             </div>
           </div>
 
-          <div class="contact__card card-blueprint">
-            <i class="ri-calendar-line contact__card-icon"></i>
-            <div class="contact__card-details">
-              <span class="contact__mono">[B_DAY]</span>
-              <span class="contact__data-text">18 Nov 2002</span>
+          <div class="card contact-pill">
+            <div class="contact-pill__icon"><i class="ri-calendar-line"></i></div>
+            <div class="contact-pill__meta">
+              <span class="contact-pill__label">Birthday</span>
+              <span class="contact-pill__value">18 Nov 2002</span>
             </div>
           </div>
-
         </div>
 
-        <!-- Embedded Map -->
-        <div class="contact__map-wrapper">
-          <div class="contact__map">
+        <!-- Map -->
+        <div class="reveal-right">
+          <div class="contact-map">
             <iframe src="https://maps.google.com/maps?q=Sfax%2C%20Tunisia&t=&z=11&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Location Map"></iframe>
           </div>
         </div>
 
-        <!-- Form Card -->
-        <div class="contact__form-wrapper card-blueprint">
-          <form action="#" class="contact__form" data-form>
-            <div class="contact__form-header">
-              <span class="contact__mono">INBOUND_MESSAGE_FORM</span>
-              <h3 class="contact__form-title">Send Me a Message</h3>
+        <!-- Form -->
+        <div class="card contact-form-card reveal">
+          <form action="#" class="contact-form" data-form>
+            <div class="contact-form__header">
+              <span class="contact-form__label">Get in touch</span>
+              <h3 class="contact-form__title">Send Me a Message</h3>
             </div>
 
-            <div class="form__group">
-              <input type="text" name="fullname" class="contact__form-input" placeholder="Full Name" required data-form-input>
-              <input type="email" name="email" class="contact__form-input" placeholder="Email Address" required data-form-input>
+            <div class="form-row">
+              <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
             </div>
 
-            <textarea name="message" class="contact__form-input contact__form-textarea" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input form-textarea" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="button contact__form-btn" type="submit" disabled data-form-btn>
-              <i class="ri-send-plane-line"></i> Transmit Message
+            <button class="btn btn-primary form-submit" type="submit" disabled data-form-btn>
+              <i class="ri-send-plane-line"></i> Send Message
             </button>
           </form>
         </div>
@@ -725,21 +769,21 @@
   <!--==================== FOOTER ====================-->
   <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__brand">
-        <span class="footer__mono">[yessine_fakhfakh // 2026]</span>
+      <div>
+        <span class="footer__brand">yessine.fakhfakh // 2026</span>
         <p class="footer__copy">
           &copy; <span id="footer-year">2026</span> All Rights Reserved.
         </p>
       </div>
 
-      <div class="footer__social">
-        <a href="https://www.linkedin.com/in/yessine-fakhfakh-470145298/" target="_blank" rel="noreferrer" class="footer__social-link" aria-label="LinkedIn">
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/yessine-fakhfakh-470145298/" target="_blank" rel="noreferrer" class="social-icon" aria-label="LinkedIn">
           <i class="ri-linkedin-box-line"></i>
         </a>
-        <a href="https://github.com/yessine18" target="_blank" rel="noreferrer" class="footer__social-link" aria-label="GitHub">
+        <a href="https://github.com/yessine18" target="_blank" rel="noreferrer" class="social-icon" aria-label="GitHub">
           <i class="ri-github-line"></i>
         </a>
-        <a href="mailto:yessine.fakhfakh@enis.tn" class="footer__social-link" aria-label="Email">
+        <a href="mailto:yessine.fakhfakh@enis.tn" class="social-icon" aria-label="Email">
           <i class="ri-mail-line"></i>
         </a>
       </div>
@@ -752,7 +796,7 @@
   </button>
 
   <!--=============== MAIN JS ===============-->
-  <script src="./assets/js/script.js?v=2026.06.15"></script>
+  <script src="./assets/js/script.js?v=2026.06.24"></script>
 
 </body>
 
