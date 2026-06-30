@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ==========================================================================
      9. CLICKABLE CARDS
      ========================================================================== */
-  var clickableCards = document.querySelectorAll('.project-card[data-url], .social-card[data-url]');
+  var clickableCards = document.querySelectorAll('.project-card[data-url], .social-card[data-url], .cert-card[data-url]');
 
   clickableCards.forEach(function (card) {
     card.addEventListener('click', function (e) {
