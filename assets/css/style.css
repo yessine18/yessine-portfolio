@@ -714,6 +714,13 @@ img {
   line-height: 1.8;
 }
 
+.highlight-gold {
+  color: var(--accent);
+  font-weight: 600;
+  text-shadow: 0 0 12px var(--accent-glow);
+}
+
+
 .hero__actions {
   display: flex;
   align-items: center;
