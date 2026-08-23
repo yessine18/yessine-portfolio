@@ -181,7 +181,7 @@ function initCustomCursor() {
     ring.classList.remove('is-clicking');
   });
 
-  var hoverTargets = 'a, button, input, textarea, select, .sw-dash-card, .v-card, .cert-card, .social-card, .cinema-frame, .ctrl-dot, .btn-cinema-launch, .video-filter-btn, .nav__link, .dot, [role="button"], .lightbox-trigger';
+  var hoverTargets = 'a, button, input, textarea, select, .sw-dash-card, .v-card, .cert-card, .social-card, .video-filter-btn, .nav__link, .dot, [role="button"], .lightbox-trigger';
 
   document.addEventListener('mouseover', function(e) {
     if (e.target.closest(hoverTargets)) {
@@ -468,7 +468,6 @@ const translations = {
     nav_home: "Cover",
     nav_about: "Specialties",
     nav_resume: "Journey & Stack",
-    nav_latest_work: "Latest Work",
     nav_projects: "Projects",
     nav_certifications: "Credentials",
     nav_social: "Achievements",
@@ -486,10 +485,6 @@ const translations = {
     about_download_cv: "Download CV",
     journey_title: "PROFESSIONAL JOURNEY & STACK",
     journey_subtitle: "Milestones in software engineering, agentic AI development, and technical stack mastery",
-    latest_work_badge: "FEATURED PRODUCTION",
-    latest_work_title: "LATEST WORK",
-    latest_work_subtitle: "An exclusive preview of my latest engineering achievement, innovative software architecture, and live system demonstration",
-    latest_work_open_drive: "Open in Drive",
     projects_badge: "10+ FEATURED ENGINEERING PROJECTS",
     projects_title: "ENGINEERING PROJECTS",
     projects_subtitle: "Agentic AI architectures, full-stack platforms, MLOps workflows, and smart systems",
@@ -515,7 +510,6 @@ const translations = {
     nav_home: "Accueil",
     nav_about: "Spécialités",
     nav_resume: "Parcours & Stack",
-    nav_latest_work: "Dernier Projet",
     nav_projects: "Projets",
     nav_certifications: "Certifications",
     nav_social: "Réalisations",
@@ -533,10 +527,6 @@ const translations = {
     about_download_cv: "Télécharger le CV",
     journey_title: "PARCOURS & COMPÉTENCES",
     journey_subtitle: "Étapes clés en génie logiciel, développement d'IA agentique et maîtrise technique",
-    latest_work_badge: "PRODUCTION RÉCENTE",
-    latest_work_title: "DERNIÈRE RÉALISATION",
-    latest_work_subtitle: "Un aperçu exclusif de ma plus récente réalisation en ingénierie, architecture logicielle et démonstration en direct",
-    latest_work_open_drive: "Ouvrir dans Drive",
     projects_badge: "10+ PROJETS D'INGÉNIERIE",
     projects_title: "PROJETS D'INGÉNIERIE",
     projects_subtitle: "Architectures d'IA agentique, plateformes full-stack, pipelines MLOps et systèmes intelligents",
